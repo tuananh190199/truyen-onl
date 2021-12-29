@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.truyenol">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/XStory"
+        android:logo="@drawable/logo"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".activity.CommentActivity"></activity>
+        <activity android:name=".activity.TimKiemActivity" />
+        <activity android:name=".activity.UserInfoActivity" />
+        <activity android:name=".activity.MainCovid" />
+        <activity android:name=".activity.ModifyStory.SearchStory" />
+        <activity android:name=".activity.ModifyStory.ModifyChapter" />
+        <activity android:name=".activity.ContentActivity" />
+        <activity android:name=".activity.ChapterActivity" />
+        <activity android:name=".activity.ModifyStory.AddStory" />
+        <activity android:name=".activity.ModifyStory.ModifyStory" />
+        <activity android:name=".activity.ModifyStory.DeleteStory" />
+        <activity android:name=".activity.ModifyStory.AdminActivity"></activity>
+        <activity android:name=".activity.HomeActivity"></activity>
+        <activity android:name=".activity.MainDangKy" />
+        <activity android:name=".activity.MainDangNhap">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.InfoStoryActivity" />
+    </application>
+
+</manifest>

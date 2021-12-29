@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/Home" />
+
+    <item
+        android:id="@+id/navigation_ranking"
+        android:icon="@drawable/ic_ranking"
+        android:title="@string/Ranking" />
+
+    <item
+        android:id="@+id/navigation_user"
+        android:icon="@drawable/ic_round_account_button_with_user_inside"
+        android:title="@string/Account" />
+
+</menu>

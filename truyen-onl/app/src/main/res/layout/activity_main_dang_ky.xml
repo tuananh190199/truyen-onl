@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".activity.MainDangKy">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Đăng ký"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Username"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/edituser"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Nhập Username" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:password="true"
+            android:id="@+id/editpass"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Nhập Password" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Fullname"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/editfullname"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Nhập Fullname" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/editemail"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint=" Nhập Email" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Ảnh"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/choseimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_baseline_image_24"
+            android:text="Chon ảnh" />
+        <Button
+            android:id="@+id/btnchonanh"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Chọn ảnh"
+            app:backgroundTint="#515151" />
+        <TextView
+            android:id="@+id/linkAvaTxt"
+            android:text="link"
+            android:visibility="invisible"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/dangky"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:hint="Đăng ký"
+            android:textColor="#ffffff"
+            app:backgroundTint="#515151" />
+
+        <Button
+            android:id="@+id/trolai"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="Trở lại"
+            app:backgroundTint="#515151" />
+
+    </LinearLayout>
+</LinearLayout>
